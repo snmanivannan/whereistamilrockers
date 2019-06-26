@@ -3,13 +3,27 @@
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42724797-6"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42724797-6" rel="noreferrer"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'UA-42724797-6');
+		
+		
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+		  if (this.readyState == 4 && this.status == 200) {
+			var myObj = JSON.parse(this.responseText);
+			console.log(myObj.entry.content.$t.toString());
+			document.getElementById("lnkHome").innerHTML = myObj.entry.content.$t;
+			document.getElementById("lnkHome").href = "http://" + myObj.entry.content.$t;
+		  }
+		};
+		xmlhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1Ocd4DIpqCVctxZQdtKz3nbuI_DhK3bqfT2arxd0Ub8E/1/public/full/R2C1?alt=json", true);
+		xmlhttp.send();
+		
 	</script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +61,9 @@
 			<p></p>
 		</div>
 		<section>
-			<h1 class="subtext"><a href="http://www.tamilrockers.ws" target="blank">www.tamilrockers.ws</a></h1>
+			<h1 class="subtext"> 
+			<a id="lnkHome" href="http://www.tamilrockers.ws" target="_blank">www.tamilrockers.ws</a>
+			</h1>
 			<div id="content-desktop">
 				<div class="line-behind">
 					<span>Press Ctrl + D to Bookmark this page</span>
@@ -56,7 +72,7 @@
 			<div class="subtext" >
 				
 					<span><a href="https://www.facebook.com/sharer/sharer.php?u=whereistamilrockers.tk" target="_blank">
-  Give us a Facebook <img src="./asset/fbicon.png" alt="Example" style="width:1%;height:5%;"> share ! நன்றி !!
+  Share this on Facebook ! நன்றி !!
 </a></span>  
 						
 			</div>
