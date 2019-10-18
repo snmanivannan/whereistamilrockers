@@ -970,3 +970,24 @@ footer {
 #content-mobile {display: block;}
 
 }
+
+ 
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 23px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+   border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+ 
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+  
