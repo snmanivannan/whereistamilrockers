@@ -991,3 +991,9 @@ footer {
   color: white;
 }
   
+span.glyphicon.glyphicon-search{
+	opacity: 50%;	
+}
+span.glyphicon.glyphicon-search:hover {
+    opacity: 100%;
+}  
