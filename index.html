@@ -13608,6 +13608,9 @@ $(function(){
 	});
 	 $('.demo a').click(function(e) {
 	//	e.preventDefault();
+	var url = $(this).attr("href");
+	console.log(url);
+	ga('send', 'event', 'Video', 'Click', 'Fall Campaign');
 	}); 
 });
 </script>
