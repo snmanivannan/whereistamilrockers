@@ -333,6 +333,7 @@
               firstClick = false; //return false;
             }
           } // end if prevLetter !== letter
+		  gtag('event', letter);
         }); // end click()
       } // end BindHandlers()
 
