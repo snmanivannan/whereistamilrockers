@@ -24,6 +24,7 @@
 		xmlhttp.send();
 		
 	</script>
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Begin Jekyll SEO tag v2.4.0 -->
@@ -13406,33 +13407,13 @@
 <script src="js/vendor.js"></script>
 <script>
 $(function(){
-	$('#demoOne').listnav();
-	$('.demoTwo').listnav({
-		includeAll: false,
-		noMatchText: 'There are no matching entries.'
-	});
-	$('#demoThree').listnav({
-		initLetter: 'c',
-		includeNums: false
-	});
-	$('#demoFour').listnav({
-		cookieName: 'cookie-demo',
-		includeAll: false,
-		onClick: function(letter) {
-			$(".myLastClicked").text(letter.toUpperCase());
-		}
-	});
+	
 	$('#demoFive').listnav({
 		includeAll: false,
 		includeOther: false,
 		prefixes: ['a', 'The Complete Works of']
 	});
-	$('#demoSix').listnav({
-		filterSelector: '.moviename',
-		includeNums: false,
-		removeDisabled: true,
-		allText: 'Complete Cast of Star Trek TNG'
-	});
+
 	 $('.demo a').click(function(e) {
 	//	e.preventDefault();
 	var url = $(this).attr("href");
@@ -13440,6 +13421,29 @@ $(function(){
 	gtag('event', url);
 	}); 
 });
+</script>
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+  var _pop = _pop || [];
+  _pop.push(['siteId', 3886424]);
+  _pop.push(['minBid', 0]);
+  _pop.push(['popundersPerIP', 0]);
+  _pop.push(['delayBetween', 0]);
+  _pop.push(['default', false]);
+  _pop.push(['defaultPerDay', 0]);
+  _pop.push(['topmostLayer', false]);
+  (function() {
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    var s = document.getElementsByTagName('script')[0]; 
+    pa.src = '//c1.popads.net/pop.js';
+    pa.onerror = function() {
+      var sa = document.createElement('script'); sa.type = 'text/javascript'; sa.async = true;
+      sa.src = '//c2.popads.net/pop.js';
+      s.parentNode.insertBefore(sa, s);
+    };
+    s.parentNode.insertBefore(pa, s);
+  })();
+/*]]>/* */
 </script>
 </body>
 </html>
