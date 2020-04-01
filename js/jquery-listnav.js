@@ -112,6 +112,8 @@
           if ( opts.includeAll ) {
             // make the All link look clicked, but don't actually click it
             $('.all', $letters).addClass('ln-selected');
+			 $("#demoFive").children().removeClass("listNavShow").addClass("listNavHide");
+			  $("#demoFive lI:lt(500)").addClass("listNavShow").removeClass("listNavHide"); 
           } else {
             // All was not included, lets find the first letter with a count and show it
             for ( var i = ((opts.includeNums) ? 0 : 1); i < letters.length; i++) {
@@ -289,7 +291,9 @@
 
             if ( letter === 'all' ) {
               // If ALL button is clicked:
-              $list.children().addClass("listNavShow").removeClass("listNavHide"); // Show ALL
+              //$list.children().addClass("listNavShow").removeClass("listNavHide"); // Show ALL
+			  $list.children().removeClass("listNavShow").addClass("listNavHide");
+			  $("#demoFive lI:lt(500)").addClass("listNavShow").removeClass("listNavHide"); 
 
               noMatches.addClass("listNavHide").removeClass("listNavShow"); // Hide the list item for no matches
 
