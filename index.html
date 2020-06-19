@@ -68,7 +68,7 @@
 <div id="header_wrap" class="outer">
 	<header class="inner">
 		<h1 id="project_title">tamilrockersdB.com</h1>
-		<h2 id="project_tagline" style="display:none">tamilrockers movie directory</h2>
+		<h2 id="project_tagline" style="display:none">a movie directory</h2>
 		
 		 	</header>
 </div>
@@ -98,10 +98,27 @@
 			
 			 
 			</ul>
+			 
+			 
+			 
+			 
+			 <pre style="text-align:center"><span  id="rand"></span>
+			 <button onclick="randompick()" type="button" class="btn btn-primary btn-block">Random Pick</button>
+			 
+			 </pre>	
 		</div>
-		 
+		
 	</section>
+	
+	
+	
+	
+	
+
 </div>
+
+
+
 <div id="footer_wrap" class="outer">
 	<footer class="inner">
 	<a  href="https://www.buymeacoffee.com/happyhearts" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>	
@@ -138,6 +155,13 @@ $(function(){
 	gtag('event', url);
 	}); 
 });
+
+
+function randompick(){
+document.getElementById('rand').innerHTML = jQuery('#demoFive ol li')[Math.floor(Math.random() * jQuery('#demoFive ol li').length + 0)].innerHTML;
+gtag('event', 'randompick');
+}
+randompick();
 </script> 	
 
 </body>
