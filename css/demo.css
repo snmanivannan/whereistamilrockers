@@ -5,3 +5,16 @@
     border-bottom-style: ridge;
     padding: 0.5%;
 }
+
+
+.demo > li{
+    border-bottom-style:inset;
+    padding: 1%
+}
+
+
+.summary{
+    font-style: italic;
+    font-size: smaller;
+    padding-left: 2%;
+}
